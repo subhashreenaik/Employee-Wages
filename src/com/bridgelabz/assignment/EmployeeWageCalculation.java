@@ -5,13 +5,27 @@ package com.bridgelabz.assignment;
  *
  */
 public class EmployeeWageCalculation {
+	
+	//This method checks attendance of employee
+	static void checkEmployee() {
 
-	public static void main(String[] args) {
-		System.out.println("Welcome to Employee\r\n"
-				+ "Wage Computation\r\n"
-				+ "Program");
-		
+        int empType = (int) (Math.random() * 10) % 2;
+        if (empType == 1)
+        {
+            System.out.println("Employee is Present");
 
+        } else
+        {
+            System.out.println("Employee is Absent");
+
+        }
 	}
+	
+	
 
-}
+ public static void main(String[] args) {	
+	      checkEmployee();  	
+	        
+	    }
+	}
+	
